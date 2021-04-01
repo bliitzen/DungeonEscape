@@ -1,0 +1,20 @@
+{
+    "anims": [
+        {
+            "key": "door_open",
+            "type": "frames",
+            "repeat": 0,
+            "frameRate": 12,
+            "frames": [
+                {
+                    "key": "door_atlas",
+                    "frame": "doors_leaf_closed"
+                },
+                {
+                    "key": "door_atlas",
+                    "frame": "doors_leaf_open"
+                }
+            ]
+        }
+    ]
+}

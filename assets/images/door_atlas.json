@@ -1,0 +1,34 @@
+{
+    "frames": [
+        {
+            "filename": "doors_leaf_closed",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 3,
+                "y": 3
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "filename": "doors_leaf_open",
+            "frame": {
+                "w": 32,
+                "h": 32,
+                "x": 38,
+                "y": 3
+            },
+            "anchor": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "meta": {
+        "description": "Atlas generado con Atlas Packer Gamma V2",
+        "web": "https://gammafp.github.io/atlas-packer-phaser/"
+    }
+}
