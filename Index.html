@@ -2,77 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dungeon Escape</title>
   <link rel="stylesheet" href="Styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.23.0/dist/phaser.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/phaser-matter-collision-plugin"></script>
+  <script src="js/escape-room.js"></script>
+  <script src="js/GameWonScene.js"></script>
+  <script src="js/LevelOne.js"></script>
+  <script src="js/LevelTwo.js"></script>
+  <script src="js/MenuScene.js"></script>
+  <script src="js/Player.js"></script>
 </head>
 <body>
-  <section class="one">
-    <h1>Dungeon Escape</h1>
-
-    <div class="row" style = "position: relative; left: 30px; center; top: 350px;">
-      <div class="column3">
-
-        <img src="Giant.jpg" alt="Giant" width="200" height="200"></div>
-
-      <div class="column3">
-
-        <img src="Knight.jpg" alt="Knight" width="200" height="200"></div>
-
-      <div class="column3">
-
-        <img src="Door.jpg" alt="Door" width="200" height="200"></div>
-
-      <div class="column3">
-
-        <img src="Chest.jpg" alt="Chest" width="200" height="200"></div>
-
+  <div class="container">
+    <div class="landing" id="thetop">
+      <h1>Welcome to Dungeon Escape</h1>
+      <a href="#thegame" style="vertical-align: middle;"><span>Play Game</span></a>
     </div>
-
-
-    <button>
-      <a href="Game.html">
-        <img src="playButton.png" alt="Chris" width="300" height="175">
-      </a>
-    </button>
-  </section>
-
-<section class="three">
-  <p> Welcome to Dungeon Escape! You are a Knight stuck in the depths deep
-     underground. Find the keys to escape. Move around with WASD
-  </p>
-<p2>
- <a href="https://mintbean.io/">Visit Mintbean</a>
-</p2>
-
-</section>
-
-    <div class="column1">
-      <section class="three">
-        <p>Christian France </p>
-        <p1>
-          <img src="IMG_3122.jpg" alt="Chris" width="245" height="326">
-        </p1>
-        <p2>
-        <u>  Game Developer </u><br>
-      The game was created using a JavaScript framework
-      called Phaser.js
-        </p2>
-      </section>
-    </div>
-    <div class="column2">
-      <section class="three">
-        <p>Sean McDerment</p>
-          <p1>
-            <img src="IMG_3120.jpg" alt="Sean" width="245" height="326">
-          </p1>
-          <p2>
-        <u>  Website Developer</u> <br>
-      The website was created using HTML and css
-
-          </p2>
-        </section>
+    <div class="game-container" id="thegame">
+      <div class="game-text">
+        <h1>Insructions:</h1>
+        <h2>-"W, A, S, D" keys to move around</h2>
+        <h2>-Search through each 
+          room to find the keys</h2>
+        <h2>-When you find the key 
+          escape through the door!</h2>
       </div>
-
+      <div class="game" id="escape-room-game"></div>
+      <script type="module" src="js/escape-room.js"></script>
+      <a href="#creator"><span>About Creator</span></a>
+    </div>
+    <div class="creator-container" id="creator">
+      <div class="creator-content">
+        <h1>Christian</h1>
+        <img src="assets/images/FacePicture.jpg" alt="My face" style="width:297px;height:280px;border-radius: 50%;">
+        <div class="creator-content-text">
+          <h2 style="text-align: center;">The game was created using a popular JavaScript framework, Phaser.js, and the website using HTML / CSS.</h2>
+          <h3 style="text-align: center;">Checkout Mintbean.io below for more awesome hackathons!</h3>
+        </div>
+        <a href="https://mintbean.io/" target="_blank"><span>Mintbean</span></a>
+        <a href="#thetop"><span>Back to top</span></a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

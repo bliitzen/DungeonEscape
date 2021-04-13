@@ -1,208 +1,179 @@
-@import "https://fonts.googleapis.com/css?family=Lato:100";
-
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-html{
-
-	font-size: 10px;
-	font-family:"Lato",Arial, sans-serif;
-	overflow-y: scroll;
+html {
+  scroll-behavior: smooth;
 }
 
-section{
-
-	width: 100%;
-	height: 100vh;
-	color: #fff;
-	background: linear-gradient(-45deg, #44d4b4, #93e6d3,#3c857d,#305c54,#4c9484,#b8b9c0);
-	background-size: 400% 400%;
-	position: relative;
-	animation: change 10s ease-in-out infinite;
+.landing {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: baseline;
+  height: 100vh;
+  border-bottom: solid orange;
 }
-button {
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
+.landing h1 {
+  margin-top: 40vh;
+  color: black;
+  margin: 0% 30% 0% 30%;
+  transition: 2s;
 }
 
-
-
-
-a {
-    text-decoration: none;
-    color: Black;
+.landing a {
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  color: orange;
+  font-weight: 900;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2% 30% 5% 30%;
+  cursor: pointer;
 }
 
+.landing a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.landing a span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
-button {
+.landing a:hover span {
+  padding-right: 20px;
+}
+
+.landing a:hover span:after {
   opacity: 1;
-}
-
-button:hover {
-  opacity: .7;
-}
-
-
-h1{
-	text-align: center;
-	font-size: 5rem;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	border: 3px solid #fff;
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 5rem 10rem;
-}
-
-h2{
-	text-align:center;
-	font-size: 5rem;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	border: 3px solid #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 5rem 15rem;
-}
-
-
-p{
-	text-align: center;
-	font-size: 30px;
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	border: 3px solid #fff;
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 2rem 8rem;
-}
-
-p1{
-	text-align: center;
-	font-size: 30px;
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	border: 3px solid #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 1rem 1rem;
-}
-
-p2{
-	text-align: center;
-	font-size: 15px;
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	border: 3px solid #fff;
-	position: absolute;
-	top: 85%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 1rem 1rem;
-}
-
-p3{
-	text-align: center;
-	font-size: 15px;
-	text-transform: uppercase;
-	letter-spacing: 0px;
-	border: 3px solid #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 1rem 1rem;
+  right: 0;
 }
 
 .game-container {
-	background-color: #8b008b;
-	justify-content: center;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid orange;
 }
 
 .game {
-	align-content: center;
+  padding-top: 2.5%;
 }
 
- .column1 {
-  float: left;
-  width: 50%;
-}
-.column2 {
- float: right;
- width: 50%;
+.game-text {
+  color: orange;
+  width: 20%;
+  padding-right: 2%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.game-container a {
+  background-color: orange;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-weight: 900;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: fit-content;
+  margin: 2% 2% 2% 2%;
 }
-.row {
-margin-top: 70px;
+
+.game-container a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.game-container a span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.game-container a:hover span {
+  padding-right: 25px;
+}
+
+.game-container a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.creator-container {
+  background-color: orange;
+  height: 100vh;
+}
+
+.creator-content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.creator-content-text {
+  width: 30%;
 }
 
-.column3 {
-  flex: 33.33%;
-  padding: 5px;
+.creator-content a {
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  color: orange;
+  font-weight: 900;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: fit-content;
+  margin: 1% 2% 1% 2%;
 }
-.grid-container {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
 
+.creator-content a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-
-.container{
-  margin: 20px auto;
-  width:400px;
-  height:400px;
-  background-color:#fff;
-  display:grid;
-  grid-template-columns: 200px 200px;
-  grid-row: auto auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+.creator-content a span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
-  .box{
-    background-color:#333;
-    padding:20px;
-    border-radius:10px;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-    font-family:sans-serif;
-  }
 
+.creator-content a:hover span {
+  padding-right: 25px;
+}
 
-@keyframes change {
-	0%{
-			background-position: 0 50%;
-		}
-		50%{
-				background-position: 100% 50%;
-		}
-
-		100% {
-			background-position: 0 50%;
-		}
+.creator-content a:hover span:after {
+  opacity: 1;
+  right: 0;
 }
